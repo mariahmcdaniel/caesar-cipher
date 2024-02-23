@@ -41,7 +41,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 def encrypt(text, shift, direction):
     ciphered = ''
-    if direction == 'e'
+    if direction == 'e':
         for letter in text:
             i = alphabet.index(letter)
             if i >= (26 - shift):
@@ -49,7 +49,7 @@ def encrypt(text, shift, direction):
             else: new_i = i + shift
             ciphered += alphabet[new_i]
         print(ciphered)        
-    elif direction == 'd'
+    elif direction == 'd':
         for letter in text:
             i = alphabet.index(letter)
             if i <= (shift - 1):
