@@ -39,14 +39,22 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 # decrypt('hnanqnefynts',5)
 
-def encrypt(text, shift):
+def encrypt(text, shift, direction):
     ciphered = ''
-    for letter in text:
-        i = alphabet.index(letter)
-        if i >= (26 - shift):
-            new_i = i - (26-shift)
-        else: new_i = i + shift
-        ciphered += alphabet[new_i]
-    print(ciphered)        
-
+    if direction == 'e'
+        for letter in text:
+            i = alphabet.index(letter)
+            if i >= (26 - shift):
+                new_i = i - (26-shift)
+            else: new_i = i + shift
+            ciphered += alphabet[new_i]
+        print(ciphered)        
+    elif direction == 'd'
+        for letter in text:
+            i = alphabet.index(letter)
+            if i <= (shift - 1):
+                new_i = i + (26-shift)
+            else: new_i = i - shift
+            ciphered += alphabet[new_i]
+        print(ciphered)     
 encrypt('civiliztion', 5)    
