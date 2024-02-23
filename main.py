@@ -57,4 +57,5 @@ def encrypt(text, shift, direction):
             else: new_i = i - shift
             ciphered += alphabet[new_i]
         print(ciphered)     
-encrypt('civiliztion', 5)    
+encrypt('civiliztion', 5, 'e')
+encrypt('hnanqnefynts',5, 'd')    
