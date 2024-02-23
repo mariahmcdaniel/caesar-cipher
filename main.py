@@ -20,3 +20,21 @@ def encrypt(text,shift):
         encrypted.append(alphabet[num])
     print(''.join(encrypted))    
 encrypt('civilization',5)
+
+def decrypt(text, shift):
+    hold = []
+    new_hold = []
+    encrypted = []
+    for letter in str(text):
+        hold.append(alphabet.index(letter))
+    print(hold)    
+    for i in hold:
+        if i <= (shift-1):
+            new_hold.append(i+(26-shift))
+        else: new_hold.append(i-shift)    
+    print(new_hold)
+    for num in new_hold:
+        encrypted.append(alphabet[num])
+    print(''.join(encrypted))
+
+decrypt('hnanqnefynts',5)
